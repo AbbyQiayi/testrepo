@@ -1,0 +1,26 @@
+---
+title: "quality"
+author: "Abby"
+date: "2021/8/11"
+output: html_document
+---
+
+##Setting up my environment
+NOTES: setting up my environment by loading the 'tidyverse' and 'palmerpenguin' packages
+
+```{r ggplot for penguin data}
+
+library(ggplot2)
+library(palmerpenguins)
+data(penguins)
+View(penguins)
+
+```
+
+```{r ggplot for penguin data visualization}
+
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+```
+
